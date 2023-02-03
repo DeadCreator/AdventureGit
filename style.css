@@ -149,3 +149,22 @@ main {
     color: #7D7987;
     margin: 2vw;
 }
+
+.main-1-button {
+    margin: 2vw;
+}
+
+.up li:hover {
+    color: #7D7987;
+}
+
+.up button[name="login"]:hover {
+    color: white;
+    background-color: orange;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    color: orange;
+    background-color: white;
+}
