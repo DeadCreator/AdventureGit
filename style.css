@@ -252,6 +252,7 @@ input[type="submit"]:hover,
 .main-2-list p,
 .main-4-list p {
     color: #7D7987;
+    font-size: 1.2vw;
 }
 
 .main-2-list div {
@@ -338,6 +339,10 @@ footer {
     display: flex;
 }
 
+.footer-up * {
+  font-size: 1vw;
+}
+
 .footer-up .left {
     flex: 3;
     display: flex;
@@ -366,11 +371,11 @@ footer {
     font-family: "Mulish";
 }
 
-.footer-up .left {
+.footer-left {
     padding-right: 5vw;
 }
 
-.footer-up .left p {
+.footer-left p {
     padding-top: 2vw;
     color: #848484;
     font-family: Mulish;
@@ -399,3 +404,55 @@ footer {
 .footer-down img {
     padding: 0 1.2vw;
 }
+
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+ .down {
+    flex-direction: column;
+    margin: 0;
+    padding 0;
+    background-color: yellow;
+  }
+  
+ .left {
+   box-sizing: border-box;
+   width:100%;
+   position:absolute ;
+   z-index: 2;
+   top: 50%;
+   right: 50%;
+   transform:translate(50%);
+   background-color:blue;
+   align-items: center;
+ }
+ 
+ .left * {
+   width:80%;
+ }
+ 
+  header {
+    padding: 0;
+  }
+  
+ .header_img {
+   position:relative;
+   width: 80vw;
+  }
+  
+  nav {
+    background-color: greenyellow;
+    flex:1;
+  }
+  
+  
+  nav ul {
+    flex-direction: column;
+    position: absolute ;
+    right: 0;
+    top: -100%;
+    background-color:red;
+    width:100%;
+    padding-bottom: 2vw;
+  }
+} 
