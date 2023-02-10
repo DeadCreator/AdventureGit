@@ -408,51 +408,79 @@ footer {
 
 
 @media only screen and (min-width : 320px) and (max-width : 480px) {
- .down {
-    flex-direction: column;
-    margin: 0;
-    padding 0;
-    background-color: yellow;
-  }
-  
- .left {
-   box-sizing: border-box;
-   width:100%;
-   position:absolute ;
-   z-index: 2;
-   top: 50%;
-   right: 50%;
-   transform:translate(50%);
-   background-color:blue;
-   align-items: center;
- }
- 
- .left * {
-   width:80%;
- }
- 
-  header {
-    padding: 0;
-  }
-  
- .header_img {
-   position:relative;
-   width: 80vw;
-  }
-  
-  nav {
-    background-color: greenyellow;
-    flex:1;
-  }
-  
-  
-  nav ul {
-    flex-direction: column;
-    position: absolute ;
-    right: 0;
-    top: -100%;
-    background-color:red;
-    width:100%;
-    padding-bottom: 2vw;
-  }
+    header {
+        padding: 0;
+    }
+    .down {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .left {
+        width: 90%;
+        flex: 0;
+        align-items: center;
+    }
+
+    .header-form  {
+        width: 100%;
+    }
+
+    .left h1 {
+        padding: 15%;
+        font-size: 6vw;
+        width: 80%;
+    }
+
+    .header-form select,
+    .header-form input{
+        font-size: 3vw;
+        width: 45%;
+    }
+
+    .header-form legend {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .header-square {
+        margin-right: 80%;
+        width: 15%;
+        height: 3%;
+    }
+
+
+    .header_img {
+        width: 100%;
+        flex: 0;
+    }
+
+    .up {
+        position: fixed;
+        background-color: orange;
+        width: 100%;
+        box-sizing: border-box;
+        height:10vw;
+    }
+
+    .logo {
+        width: auto;
+        height: auto;
+
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 20vw;
+    }
+    .up a {
+        font-size: 2vw;
+    }
+
 } 
