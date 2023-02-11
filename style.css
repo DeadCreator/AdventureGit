@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     font-family: Inter;
+    font-weight: 400;
 }
 
 main section {
@@ -26,7 +28,17 @@ li {
 .up a {
     color: #B8BECD;
     font-size: 1vw;
+
     text-decoration: none;
+}
+
+.menu-button,
+.menu-button button,
+#menu-open {
+    width: 0;
+    height: 0;
+    border: none;
+    padding: 0;
 }
 
 nav {
@@ -47,7 +59,7 @@ nav {
 }
 
 header {
-    height: 786px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     padding: 0.5vw 10vw;
@@ -136,7 +148,7 @@ input[type="submit"]{
     color: white;
     background-color: orange;
     border: solid orange 0.25vw;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1vw;
 }
 button[name="login"] {
@@ -407,35 +419,48 @@ footer {
 
 
 
-@media only screen and (min-width : 320px) and (max-width : 480px) {
+@media only screen and (min-width : 280px) and (max-width : 480px) {
     header {
         padding: 0;
     }
     .down {
         flex-direction: column;
-        margin-top: 10%;
+        margin-top: 15%;
+        padding: 5vw;
+        flex: 0;
     }
 
     .left {
         width: 90%;
         flex: 0;
         align-items: center;
+        order: 2;
     }
 
     .header-form  {
         width: 100%;
     }
 
+
     .left h1 {
-        padding: 15%;
+        padding: 10% 15%;
         font-size: 6vw;
         width: 80%;
     }
 
     .header-form select,
     .header-form input{
-        font-size: 3vw;
+        font-size: 4vw;
         width: 45%;
+    }
+
+    ul li button {
+        width: 30vw;
+        border: 2px solid orange;
+    }
+
+    .header-form input {
+        font-size: 5vw;
     }
 
     .header-form legend {
@@ -453,6 +478,7 @@ footer {
     .header_img {
         width: 100%;
         flex: 0;
+        order: 1;
     }
 
     .up {
@@ -476,13 +502,14 @@ footer {
     nav ul {
         flex-direction: column;
         position: absolute;
-        right: 0;
+        right: -100%;
         width: 35vw;
         height: 100vh;
         align-items: baseline;
         justify-content: flex-start;
-        padding:10vw;
+        padding: 0.8vw 3vw 0.8vw 10vw;
         background-color: snow;
+        transition: right 2s;
     }
     .up a, 
    .up button{
@@ -491,11 +518,193 @@ footer {
     
    .up li {
      margin: 2vw;
-   }
+    }
    
-  .menu-button div {
+    .menu-button,
+    #menu-open {
     background-color:yellow ;
-    width :25vw;
-    height:15vw;
-  }
-} 
+    width :10vw;
+    height:10vw;
+    align-self: flex-end;
+    }
+
+    .menu-button button {
+        width: 100%;
+        height: 100%;
+    }
+
+    #menu-open {
+        align-self: center;
+        margin-right: 5vw;
+    }
+
+    main {
+        padding: 0 5vw;
+    }
+    
+    .main-2,
+    .main-3 {
+        margin-top: 5vw;
+    }
+
+    .main-2-header,
+    .main-4-header {
+        margin-bottom: 5vw;
+    }
+
+    .main-2-header h2,
+    .main-4-header h2 {
+        font-size: 5vw;
+    }
+
+    .main-2-header a,
+    .main-4-header a {
+        font-size: 4vw;
+    }
+
+    .main-2-list,
+    .main-4-list {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        height: 80vh;
+    }
+
+    .main-4-list {
+        height: 100vh;
+    }
+
+    .main-2-list div {
+        width: 48%;
+        height: 40%;
+    }
+
+    .main-4-list div {
+        height: 50%;
+        width: 45%;
+    }
+
+    .main-2-list h3,
+    .main-2-list p {
+        width: 30vw;
+        font-size: 4vw;
+        padding-left: 1vw;
+    }
+
+    .main-1,
+    .main-3{
+        flex-direction: column;
+    }
+
+    .main-1 img,
+    .main-3 img {
+        width: 100%;
+        order: 1;
+    }
+
+    .main-4-list img {
+        height: 50%;
+    }
+
+    .main-4-list h3 {
+        font-size: 4vw;
+    }
+
+    .main-4-list p {
+        font-size: 3vw;
+        padding: 2vw 0;
+    }
+
+    .main-4-list a {
+        font-size: 4vw;
+    }
+
+    .main-1-paragraph,
+    .main-3-paragraph {
+        order: 2;
+    }
+
+    .main-1-paragraph p,
+    .main-3-paragraph p {
+        font-size: 5vw;
+    }
+
+    .main-1-paragraph button,
+    .main-3-paragraph button {
+        padding: 2vw 4vw ;
+        font-size: 4.5vw;
+    }
+
+    .main-1-paragraph h2,
+    .main-3-paragraph h2 {
+        font-size: 8vw;
+    }
+
+    .footer-up {
+        flex-direction: column;
+    }
+
+    .footer-left {
+        display: flex;
+        flex-direction: row;
+        padding: 2vw;
+        order: 2;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    footer {
+        padding: 2vw;
+    }
+
+    .footer-left img {
+        width: 5vw;
+    }
+
+    .footer-up .right {
+        order: 1;
+        justify-content: flex-start;
+        padding:2vw;
+        flex: 0;
+        height: 200vh;
+    }
+
+    .footer-up .right ul,
+    .footer-up .right li,
+    .footer-up .right a {
+        font-size: 3vw;
+        margin: 0;
+        text-align: start;
+        padding-left: 0;
+    }
+
+    .footer-up .right ul {
+        align-items: stretch;
+        row-gap: 2vw;
+    }
+
+    .footer-left p {
+        padding-left: 2vw;
+        padding-top: 0;
+        font-size: 3vw;
+        width: 80%;
+    }
+
+    .footer-left .copyright {
+        padding: 2vw;
+        padding-left: 0;
+    }
+
+    .footer-separator {
+        margin: 2vw 0;
+    }
+
+    .footer-down {
+        justify-content: space-evenly;
+        padding: 2vw;
+    }
+}
+
+.opened{
+    transition: 1s;
+    right: 0;
+}
