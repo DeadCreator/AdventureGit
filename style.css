@@ -460,13 +460,13 @@ footer {
         background-color: orange;
         width: 100%;
         box-sizing: border-box;
-        height:10vw;
+        height:15vw;
     }
 
     .logo {
         width: auto;
         height: auto;
-
+        padding:3vw;
     }
 
     nav {
@@ -477,10 +477,25 @@ footer {
         flex-direction: column;
         position: absolute;
         right: 0;
-        width: 20vw;
+        width: 35vw;
+        height: 100vh;
+        align-items: baseline;
+        justify-content: flex-start;
+        padding:10vw;
+        background-color: snow;
     }
-    .up a {
-        font-size: 2vw;
+    .up a, 
+   .up button{
+        font-size: 4vw;
     }
-
+    
+   .up li {
+     margin: 2vw;
+   }
+   
+  .menu-button div {
+    background-color:yellow ;
+    width :25vw;
+    height:15vw;
+  }
 } 
