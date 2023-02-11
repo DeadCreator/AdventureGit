@@ -242,10 +242,7 @@ input[type="submit"]:hover,
     padding-top: 2vw;
 }
 
-.main-2-list div:hover,
-.main-4-list div:hover {
-    transform: scale(1.1);
-}
+
 
 .main-2-list h3,
 .main-2-list p,
@@ -522,10 +519,31 @@ footer {
    
     .menu-button,
     #menu-open {
-    background-color:yellow ;
+    background-color:snow ;
     width :10vw;
     height:10vw;
     align-self: flex-end;
+    }
+    
+    #menu-open, 
+    #menu-close {
+      padding: 1vw;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-around ;
+      align-items: center;
+    }
+    
+    .menu-style {
+        width: 90%;
+        height: 10%;
+        background-color: orange;
+        border: solid orange 1px;
+        border-radius: 0.5vw;
+    }
+    
+    #menu-close .menu-style {
+        background-color: snow
     }
 
     .menu-button button {
@@ -657,7 +675,7 @@ footer {
     }
 
     .footer-left img {
-        width: 5vw;
+        width: 6vw;
     }
 
     .footer-up .right {
@@ -686,7 +704,7 @@ footer {
         padding-left: 2vw;
         padding-top: 0;
         font-size: 3vw;
-        width: 80%;
+        width: 90%;
     }
 
     .footer-left .copyright {
