@@ -252,6 +252,7 @@ input[type="submit"]:hover,
 .main-2-list p,
 .main-4-list p {
     color: #7D7987;
+    font-size: 1.2vw;
 }
 
 .main-2-list div {
@@ -286,6 +287,10 @@ input[type="submit"]:hover,
 .main-3-paragraph h2,
 .main-3-paragraph button{
     margin-left: 0;
+}
+
+.main-4 {
+    margin-bottom: 15vw;
 }
 
 .main-4-list div {
@@ -327,27 +332,170 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #F9F9FB;
-    padding: 0 10vw;
+    padding: 4vw 10vw;
 }
 
 .footer-up {
     display: flex;
 }
 
+.footer-up * {
+  font-size: 1vw;
+}
+
 .footer-up .left {
-    flex: 4;
+    flex: 3;
     display: flex;
     flex-direction: column;
     padding: 0;
 }
 
 .footer-up .right {
-    flex: 7;
+    flex: 8;
     display: flex;
 }
 
 .footer-up .right ul {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: end;
+    padding-left: 5vw;
+}
+
+
+.footer-up .right a {
+    text-decoration: none;
+    color: #848484;
+    font-family: "Mulish";
+}
+
+.footer-left {
+    padding-right: 5vw;
+}
+
+.footer-left p {
+    padding-top: 2vw;
+    color: #848484;
+    font-family: Mulish;
+}
+
+.footer-separator {
+    width: 100%;
+    height: 0.1vw;
+    background-color: #C4C4C4;
+    margin: 5vw 0;
+}
+
+.footer-up .logo {
+    padding: 0;
+}
+
+.footer-up .left .copyright {
+    padding-top: 5vw;
+}
+
+.footer-down {
+    display: flex;
     justify-content: center;
 }
+
+.footer-down img {
+    padding: 0 1.2vw;
+}
+
+
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+    header {
+        padding: 0;
+    }
+    .down {
+        flex-direction: column;
+        margin-top: 10%;
+    }
+
+    .left {
+        width: 90%;
+        flex: 0;
+        align-items: center;
+    }
+
+    .header-form  {
+        width: 100%;
+    }
+
+    .left h1 {
+        padding: 15%;
+        font-size: 6vw;
+        width: 80%;
+    }
+
+    .header-form select,
+    .header-form input{
+        font-size: 3vw;
+        width: 45%;
+    }
+
+    .header-form legend {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .header-square {
+        margin-right: 80%;
+        width: 15%;
+        height: 3%;
+    }
+
+
+    .header_img {
+        width: 100%;
+        flex: 0;
+    }
+
+    .up {
+        position: fixed;
+        background-color: orange;
+        width: 100%;
+        box-sizing: border-box;
+        height:15vw;
+    }
+
+    .logo {
+        width: auto;
+        height: auto;
+        padding:3vw;
+    }
+
+    nav {
+        justify-content: flex-end;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        width: 35vw;
+        height: 100vh;
+        align-items: baseline;
+        justify-content: flex-start;
+        padding:10vw;
+        background-color: snow;
+    }
+    .up a, 
+   .up button{
+        font-size: 4vw;
+    }
+    
+   .up li {
+     margin: 2vw;
+   }
+   
+  .menu-button div {
+    background-color:yellow ;
+    width :25vw;
+    height:15vw;
+  }
+} 
