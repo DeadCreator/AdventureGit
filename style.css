@@ -9,6 +9,7 @@
     font-weight: 400;
 }
 
+
 main section {
     margin-top: 15vw;
 }
@@ -28,7 +29,6 @@ li {
 .up a {
     color: #B8BECD;
     font-size: 1vw;
-
     text-decoration: none;
 }
 
@@ -99,6 +99,97 @@ h2 {
     font-size: 2.5vw;
     font-family: "Playfair Display";
 }
+
+#auth-form-container {
+    z-index: -100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#auth-form-container.opened-container {
+    background-color: rgba(128, 128, 128, 0.644);
+    z-index: 110;
+    opacity: 100%;
+    transition: 1s;
+}
+
+#login-form,
+#register-form {
+    position: fixed;
+    z-index: 110;
+    right: 50%;
+    top: -150%;
+    transform: translate(50%,-50%);
+    background-color: snow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2% 2% 5% 2%;
+    border: solid orange 0.25vw;
+    border-radius: 5px;
+    transition: top 1s;
+}
+
+#login-form form,
+#register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#change-to-reg,
+#change-to-log {
+    color: orange;
+    text-align: center;
+    margin-top: 2vw;
+}
+
+#register-form.opened-auth,
+#login-form.opened-auth {
+    transition: 0.5s ease-out;
+    top: 50%;
+}
+
+#login-form input,
+#register-form input {
+    width: 30vw;
+    font-size: 1.5vw;
+    padding: 0.8vw 1.5vw;
+    box-sizing: border-box;
+    margin: 1vw;
+    border: solid lightgrey 0.25vw;
+    border-radius: 5px;
+}
+
+#login-form button,
+#register-form button {
+    font-size: 1.5vw;
+    margin: 1vw;
+    width: 30vw;
+}
+
+#login-form button[name="log in"],
+#register-form button[name="register"] {
+    margin-top: 5vw;
+}
+
+#login-form #close-auth-log,
+#register-form #close-auth-reg {
+    background: url("images/close-auth.png") no-repeat center/70%;
+    border: none;
+    width: 5vw;
+    height: 5vw;
+    margin: 0 0 4vw 0;
+    padding: 0;
+    align-self: flex-end;
+    overflow: hidden;
+}
+
 
 .header-form {
     display: flex;
@@ -203,7 +294,7 @@ footer {
     color: #7D7987;
 }
 
-.up button[name="login"]:hover{
+.up button[name="login"]:hover {
     color: white;
     background-color: orange;
 }
@@ -414,6 +505,12 @@ footer {
     padding: 0 1.2vw;
 }
 
+.main-2-list div:hover,
+.main-4-list img:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
 
 
 @media only screen and (min-width : 280px) and (max-width : 480px) {
@@ -562,6 +659,37 @@ footer {
         margin-right: 5vw;
         background-color: orange;
     }
+
+    #login-form,
+    #register-form {
+        width: 50vw;
+    }
+
+    #login-form form,
+    #register-form form {
+        justify-content: center;
+    }
+
+    #login-form form input,
+    #login-form button,
+    #register-form form input,
+    #register-form button {
+        margin: 0 0 3vw 0;
+        font-size: 3vw;
+        width: 100%;
+    }
+
+    #login-form form a,
+    #register-form form a {
+        font-size: 3vw;
+    }
+
+    #login-form #close-auth-log,
+    #register-form #close-auth-reg {
+        width: 10vw;
+        height: 10vw;
+    }
+
     
 
     main {
