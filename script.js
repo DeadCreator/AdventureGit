@@ -1,7 +1,10 @@
     
+    const body = document.getElementById("body")
+    
     const closeMenu = document.getElementById("menu-close")
     const openMenu = document.getElementById("menu-open")
     const menu = document.getElementById("menu")
+    const freeMenu = document.getElementById("free_menu")
 
     const authContainer = document.getElementById("auth-form-container")
     const closeAuthLog = document.getElementById("close-auth-log")
@@ -18,31 +21,44 @@
 
     openMenu.addEventListener("click", () => {
         menu.classList.add("opened")
+        freeMenu.classList.add("opened_free")
+        console.log('shit');
     })
     closeMenu.addEventListener("click", () => {
         menu.classList.remove("opened")
+        freeMenu.classList.remove("opened_free")
         
     })
+    
+    freeMenu.addEventListener("click", () => {
+        menu.classList.remove("opened")
+        freeMenu.classList.remove("opened_free")
+        
+    }) 
 
 
     openLogin.addEventListener("click", () => {
         loginForm.classList.add("opened-auth")
         authContainer.classList.add("opened-container")
+        body.style.overflow = "hidden";
     })
 
     openRegister.addEventListener("click", () => {
         registerForm.classList.add("opened-auth")
         authContainer.classList.add("opened-container")
+        body.style.overflow = "hidden";
     })
 
     closeAuthLog.addEventListener("click", () => {
         loginForm.classList.remove("opened-auth")
         authContainer.classList.remove("opened-container")
+        body.style.overflow = "scroll";
     })
 
     closeAuthReg.addEventListener("click", () => {
         registerForm.classList.remove("opened-auth")
         authContainer.classList.remove("opened-container")
+        body.style.overflow = "scroll";
     })
 
     changeToLog.addEventListener("click", () => {
