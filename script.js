@@ -18,6 +18,8 @@
 
     const changeToLog = document.getElementById("change-to-log")
     const changeToReg = document.getElementById("change-to-reg")
+    
+    const backToTop = document.getElementById("back-to-top")
 
     openMenu.addEventListener("click", () => {
         menu.classList.add("opened")
@@ -69,5 +71,23 @@
     changeToReg.addEventListener("click", () => {
         registerForm.classList.add("opened-auth")
         loginForm.classList.remove("opened-auth")
+    })
+    
+    window.onscroll = function() {
+      funcToTop()
+    }
+    
+    function funcToTop() {
+      if (window.scrollY > 500) {
+        backToTop.classList.add("backToTopAnim")
+      }
+      else {
+        backToTop.classList.remove("backToTopAnim")
+      }
+    }
+    
+    backToTop.addEventListener("click", () => {
+      document.documentElement.scrollTop= "0" 
+      console.log(window.scrollY)
     })
 

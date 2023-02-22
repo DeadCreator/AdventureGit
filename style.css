@@ -9,6 +9,15 @@
     font-weight: 400;
 }
 
+html, body {
+    scroll-behavior: smooth;
+}
+
+#back-to-top {
+  position:sticky;
+  z-index:150;
+}
+
 
 main section {
     margin-top: 15vw;
@@ -514,6 +523,17 @@ footer {
 
 
 @media only screen and (min-width : 280px) and (max-width : 480px) {
+    
+    #back-to-top {
+        position:fixed;
+        bottom: -100%;
+        right:8vw;
+        width: 12vw;
+        height:12vw;
+        font-size:5vw;
+        transition: bottom 1s;
+    }
+  
     header {
         padding: 0;
     }
@@ -604,7 +624,7 @@ footer {
         justify-content: flex-start;
         padding: 0.8vw 3vw 0.8vw 10vw;
         background-color: snow;
-        transition: right 2s;
+        transition: right 1.5s;
     }
     
     #free_menu {
@@ -869,11 +889,16 @@ footer {
 }
 
 .opened{
-    transition: 1s;
+    transition: 0.8s;
     right: 0;
 }
 
 #free_menu.opened_free {
-    transition: 1s;
+    transition: 0.8s;
     right:45vw;
+}
+
+#back-to-top.backToTopAnim {
+    transition: 0.5s;
+    bottom: 10vw;
 }
