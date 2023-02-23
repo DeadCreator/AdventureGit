@@ -24,7 +24,6 @@
     openMenu.addEventListener("click", () => {
         menu.classList.add("opened")
         freeMenu.classList.add("opened_free")
-        console.log('shit');
     })
     closeMenu.addEventListener("click", () => {
         menu.classList.remove("opened")
