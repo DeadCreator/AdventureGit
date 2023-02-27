@@ -921,3 +921,91 @@ footer {
     transition: 0.5s;
     bottom: 5vw;
 }
+
+
+
+/* search page styles */
+
+
+.search-header {
+    height: auto;
+}
+
+.search-header .up {
+    flex: 0;
+}
+
+.search-header .up .logo {
+    width: auto;
+    height: auto;
+}
+
+.main-search {
+    display: flex;
+    padding: 0;
+}
+
+.search-results {
+    flex: 8;
+    background-color: blue;
+    margin: 0;
+    padding: 3vw;
+}
+
+.filters {
+    flex: 2;
+    background-color: red;
+}
+
+.found-count {
+    width: auto;
+    font-size: 1.8vw;
+    padding: 0;
+    margin-bottom: 2vw;
+}
+
+.offers {
+    display: flex;
+}
+
+.offer {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1vw;
+    width: 33.33%;
+    background: url("images/main-2-image-1.png") no-repeat;
+    background-size: cover;
+}
+
+.offer-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.offer-title {
+    font-size: 2vw;
+}
+
+.price {
+    color: orange;
+    font-size: 1.8vw;
+    margin-top: 1vw;
+}
+
+.properties {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.properties * {
+    color: #7D7987;
+    width: auto;
+    display: flex;
+    margin-top: 1vw;
+    padding-right: 1vw;
+}
+
+.properties .location {
+    width: 100%;
+}
