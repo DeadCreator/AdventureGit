@@ -35,29 +35,118 @@
                 </ul>
             </nav>
         </section>
+        <div id="auth-form-container"></div>
+        <div id="login-form">
+            <button id="close-auth-log"></button>
+            <form>
+                <input type="text" name="login" placeholder="Your login" required>
+                <input type="password" name="password" placeholder="Your password" required>
+                <button name="log in">Log in</button>
+                <a id="change-to-reg" name="register">Don't have an account? Create one!</a>
+            </form>
+        </div>
+        <div id="register-form">
+            <button id="close-auth-reg"></button>
+            <form>
+                <input type="text" name="login" placeholder="Your login" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <input type="password" name="password" placeholder="Your password" required>
+                <input type="password" name="password" placeholder="Confirm password" required>
+                <button name="register">Register</button>
+                <a id="change-to-log" name="register">Already have an account? Sign in!</a>
+            </form>
+        </div>
     </header>
     <main class="main-search">
-        <section class="search-results">
-            <h1 class="found-count">Found 555 offers</h1>
-            <div class="offers">
-                <div class="offer">
-                    <h2 class="offer-title">Arbat, Moscow</h2>
-                    <h3 class="price">165 000</h3>
-                    <div class="properties">
-                        <h3 class="location">Moscow, Nigger Street, 15</h3>
-                        <h3 class="grade">Awesome</h3>
-                        <h3 class="activity">Water Rafting</h3>
-                        <h3 class="date">July</h3>
-                    </div>
-                </div>
-            </div>
-        </section>
         <aside class="filters">
             <label for="activity">Activity</label>
             <label for="grade">Grade</label>
             <label for="date">Date</label>
             <label for="location">Location</label>
         </aside>
+        <section class="search-results">
+            <h1 class="found-count">Found 555 offers</h1>
+            <div class="offers">
+                <div class="offer">
+                    <img src="images/search-result-1.png">
+                    <h2 class="offer-title">Raja Ampat, Indonesia</h2>
+                    <h3 class="price">165 000</h3>
+                    <div class="properties">
+                        <h3 class="location">Moscow, Nigger Street, 15</h3>
+                        <h3 class="grade">Awesome</h3>
+                        <h3 class="activity">Water Rafting</h3>
+                        <h3 class="date">July</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tempus neque nisl, non convallis felis rutrum vel. Curabitur tincidunt accumsan erat, id lobortis orci cursus at. Vivamus sodales leo quis fringilla maximus.
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="images/search-result-2.png">
+                    <h2 class="offer-title">Fanjingshan, China</h2>
+                    <h3 class="price">125 500</h3>
+                    <div class="properties">
+                        <h3 class="location">Moscow, Nigger Street, 15</h3>
+                        <h3 class="grade">Awesome</h3>
+                        <h3 class="activity">Water Rafting</h3>
+                        <h3 class="date">July</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tempus neque nisl, non convallis felis rutrum vel. Curabitur tincidunt accumsan erat, id lobortis orci cursus at. Vivamus sodales leo quis fringilla maximus.
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="images/search-result-3.png">
+                    <h2 class="offer-title">Vevey, Switzerland</h2>
+                    <h3 class="price">45 000</h3>
+                    <div class="properties">
+                        <h3 class="location">Moscow, Nigger Street, 15</h3>
+                        <h3 class="grade">Awesome</h3>
+                        <h3 class="activity">Water Rafting</h3>
+                        <h3 class="date">July</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tempus neque nisl, non convallis felis rutrum vel. Curabitur tincidunt accumsan erat, id lobortis orci cursus at. Vivamus sodales leo quis fringilla maximus.
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="images/search-result-4.png">
+                    <h2 class="offer-title">Skasar, Montenegro</h2>
+                    <h3 class="price">85 000</h3>
+                    <div class="properties">
+                        <h3 class="location">Moscow, Nigger Street, 15</h3>
+                        <h3 class="grade">Awesome</h3>
+                        <h3 class="activity">Water Rafting</h3>
+                        <h3 class="date">July</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tempus neque nisl, non convallis felis rutrum vel. Curabitur tincidunt accumsan erat, id lobortis orci cursus at. Vivamus sodales leo quis fringilla maximus.
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="images/search-result-2.png">
+                    <h2 class="offer-title">Arbat, Moscow</h2>
+                    <h3 class="price">100 000</h3>
+                    <div class="properties">
+                        <h3 class="location">Moscow, Nigger Street, 15</h3>
+                        <h3 class="grade">Awesome</h3>
+                        <h3 class="activity">Water Rafting</h3>
+                        <h3 class="date">July</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tempus neque nisl, non convallis felis rutrum vel. Curabitur tincidunt accumsan erat, id lobortis orci cursus at. Vivamus sodales leo quis fringilla maximus.
+                    </div>
+                </div>
+                <div class="offer">
+                    <img src="images/search-result-3.png">
+                    <h2 class="offer-title">Arbat, Moscow</h2>
+                    <h3 class="price">123 000</h3>
+                    <div class="properties">
+                        <h3 class="location">Moscow, Nigger Street, 15</h3>
+                        <h3 class="grade">Awesome</h3>
+                        <h3 class="activity">Water Rafting</h3>
+                        <h3 class="date">July</h3>
+                        <p class="desc">Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Sed tempus neque nisl, non convallis felis rutrum vel. Curabitur tincidunt accumsan erat, id lobortis orci cursus at. Vivamus sodales leo quis fringilla maximus.
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         <section class="footer-up">

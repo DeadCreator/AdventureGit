@@ -71,11 +71,11 @@
         registerForm.classList.add("opened-auth")
         loginForm.classList.remove("opened-auth")
     })
-    
+
     window.onscroll = function() {
       funcToTop()
     }
-    
+
     function funcToTop() {
       if (window.scrollY > 500) {
         backToTop.classList.add("backToTopAnim")
@@ -84,9 +84,8 @@
         backToTop.classList.remove("backToTopAnim")
       }
     }
-    
+
     backToTop.addEventListener("click", () => {
-      document.documentElement.scrollTop= "0" 
-      console.log(window.scrollY)
+      document.documentElement.scrollTop= "0"
     })
 
