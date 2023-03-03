@@ -59,10 +59,38 @@
     </header>
     <main class="main-search">
         <aside class="filters">
-            <label for="activity">Activity</label>
-            <label for="grade">Grade</label>
-            <label for="date">Date</label>
-            <label for="location">Location</label>
+            <form class="search-form">
+              <select>
+                        <option  hidden>Location</option>
+                        <option>Europe</option>
+                        <option>Asia</option>
+                        <option>Australia</option>
+                        <option>America</option>
+                    </select>
+                    <select>
+                        <option hidden >Activity</option>
+                        <option>Hiking</option>
+                        <option>Camping</option>
+                        <option>Water Rafting</option>
+                        <option>Hunting</option>
+                    </select>
+                    <select>
+                        <option hidden>Grade</option>
+                    </select>
+                    <select>
+                        <option hidden >Date</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                    </select>
+                    <select type="sort">
+                      <option hidden>Sort by</option>
+                      <option>Relevance</option>
+                      <option>Low first</option>
+                      <option>High first</option>
+                     </select>
+                    <input type="submit" value="Apply">
+                </form> 
         </aside>
         <section class="search-results">
             <h1 class="found-count">Found 555 offers</h1>

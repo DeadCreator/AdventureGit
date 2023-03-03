@@ -911,6 +911,10 @@ footer {
         justify-content: space-evenly;
         padding: 2vw;
     }
+    
+    /* search page styles mobile*/
+    
+   
 }
 
 .opened{
@@ -956,7 +960,6 @@ footer {
 
 .filters {
     flex: 2;
-    background-color: red;
 }
 
 .found-count {
@@ -1021,4 +1024,58 @@ footer {
 
 .properties .location {
     width: 100%;
+}
+
+@media only screen and (min-width : 280px) and (max-width : 480px) {
+  .offer {
+     width: 98%;
+  } 
+  
+  .found-count {
+     padding: 5vw 1vw;
+     font-size: 5vw;
+  }
+  
+  .filters {
+     padding: 0;
+  }
+  
+  .search-form {
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     flex-wrap: wrap;
+  }
+  
+ .search-form *, 
+ .search-form input[type="submit"] {
+     width: 32%;
+     font-size: 3vw;
+     padding: 1vw;
+     margin: 1vw 0;
+ }
+  
+  .main-search {
+     padding: 20vw 5vw;
+  }
+ 
+  .properties * {
+     font-size: 3vw;
+     padding: 1vw 5vw;
+  }
+  
+  .offer-title {
+     font-size: 5vw;
+     padding-left: 5vw;
+  }
+  
+  .price{
+     font-size: 5vw;
+     padding-left: 5vw;
+  }
+  
+  .properties .desc {
+     padding-bottom: 5vw;
+  }
+  
 }
