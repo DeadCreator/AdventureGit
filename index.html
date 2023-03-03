@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
     <title>AdventureGit - Home</title>
 </head>
 <body id="body">
-  <button id="back-to-top" >&#8593;</button>
+    <button id="back-to-top" >&#8593;</button>
     <header>
         <section class="up">
             <img src="images/logo.png" class="logo">
@@ -28,8 +28,8 @@
                     </button></li>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="search.html">Destinations</a></li>
+                    <li><a href="news.html">News</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="partner.html">Partner</a></li>
                     <li><button id="openLogin">Login</button>
                     <li><button id="openRegister">Register</button></li>
                 </ul>
@@ -108,25 +108,25 @@
                 <a href="search.html">View all &#8250;</a>
             </div>
             <div class="main-2-list">
-                <div class="main-2-list-paragraph-1">
+                <a href="single.html" class="main-2-list-paragraph-1">
                     <h3>Raja Ampat</h3>
                     <p>Indonesia</p>
-                </div>
-                <div class="main-2-list-paragraph-2">
+                </a>
+                <a href="single.html" class="main-2-list-paragraph-2">
                     <h3>Fanjingshan</h3>
                     <p>China</p>
-                </div>
-                <div class="main-2-list-paragraph-3">
+                </a>
+                <a href="single.html" class="main-2-list-paragraph-3">
                     <h3>Vevey</h3>
                     <p>Switzerland</p>
-                </div>
-                <div class="main-2-list-paragraph-4">
+                </a>
+                <a href="single.html" class="main-2-list-paragraph-4">
                     <h3>Skadar</h3>
                     <p>Montenegro</p>
-                </div>
+                </a>
             </div>
         </section>
-        <section class="main-3">
+        <section id="guides-download" class="main-3">
             <div class="main-3-paragraph">
                 <h2>Guides by Thousand Sunny</h2>
                 <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) 
@@ -138,7 +138,7 @@
         <section class="main-4">
             <div class="main-4-header">
                 <h2>Trending Stories</h2>
-                <a href="#">View all &#8250;</a>
+                <a href="news.html#trending-stories">View all &#8250;</a>
             </div>
             <div class="main-4-list">
                 <div class="main-4-list-paragraph-1">
@@ -146,14 +146,14 @@
                     <h3>The many benefits of taking a healing holiday</h3>
                     <p>‘Helaing holidays’ are on the rise 
                         tohelp maximise your health and happines...</p>
-                    <a href="#">Read more</a>
+                    <a href="news.html#trending-stories">Read more</a>
                 </div>
                 <div class="main-4-list-paragraph-2">
                     <img src="images/main-4-image-2.png">
                     <h3>The best Kyoto restaurant to try Japanese food</h3>
                     <p>From tofu to teahouses, here’s our guide to Kyoto’s best restaurants
                         to visit...</p>
-                    <a href="#">Read more</a>
+                    <a href="news.html#trending-stories">Read more</a>
                 </div>
                 <div class="main-4-list-paragraph-3">
                     <img src="images/main-4-image-3.png">
@@ -161,7 +161,7 @@
                     <p>It’s remote and challenging to get,
                         but braving the jungle and exploring
                         these ruins without the...</p>
-                    <a href="#">Read more</a>
+                    <a href="news.html#trending-stories">Read more</a>
                 </div>
                 <div class="main-4-list-paragraph-4">
                     <img src="images/main-4-image-4.png">
@@ -169,7 +169,7 @@
                     <p>If learning to surf has in on your to-
                         do list for a while, the good news
                         is: it’s never too late...</p>
-                    <a href="#">Read more</a>
+                    <a href="news.html#trending-stories">Read more</a>
                 </div>
             </div>
         </section>
@@ -185,25 +185,25 @@
             </div>
             <div class="right">
                 <ul>Destinations
-                    <li><a href="#">Africa</a></li>
-                    <li><a href="#">Antartica</a></li>
-                    <li><a href="#">Asia</a></li>
-                    <li><a href="#">Europe</a></li>
-                    <li><a href="#">America</a></li>
+                    <li><a href="search.html?location=africa">Africa</a></li>
+                    <li><a href="search.html?location=antarctica">Antartica</a></li>
+                    <li><a href="search.html?location=asia">Asia</a></li>
+                    <li><a href="search.html?location=europe">Europe</a></li>
+                    <li><a href="search.html?location=america">America</a></li>
                 </ul>
                 <ul>Shop
-                    <li><a href="#">Destinations Guides</a></li>
-                    <li><a href="#">Pictorial & Gifts</a></li>
-                    <li><a href="#">Special Offers</a></li>
-                    <li><a href="#">Delivery Times</a></li>
-                    <li><a href="#">FAQs</a></li>
+                    <li><a href="index.html#guides-download">Destinations Guides</a></li>
+                    <li><a href="news.html#pictorial-and-gifts">Pictorial & Gifts</a></li>
+                    <li><a href="news.html#special-offers">Special Offers</a></li>
+                    <li><a href="about.html#delivery-times">Delivery Times</a></li>
+                    <li><a href="about.html#faqs">FAQs</a></li>
                 </ul>
                 <ul>Interests
-                    <li><a href="#">Adventure</a></li>
-                    <li><a href="#">Art And Culture</a></li>
-                    <li><a href="#">Wildlife and Nature</a></li>
-                    <li><a href="#">Family Holidays</a></li>
-                    <li><a href="#">Food and Drinks</a></li>
+                    <li><a href="news.html#adventure">Adventure</a></li>
+                    <li><a href="news.html#art-and-culture">Art And Culture</a></li>
+                    <li><a href="news.html#wildlife-and-nature">Wildlife and Nature</a></li>
+                    <li><a href="news.html#family-holidays">Family Holidays</a></li>
+                    <li><a href="news.html#food-and-drinks">Food and Drinks</a></li>
                 </ul>
             </div>
         </section>

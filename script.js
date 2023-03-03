@@ -21,6 +21,11 @@
     
     const backToTop = document.getElementById("back-to-top")
 
+    const nextImage = document.getElementById("next-image")
+    const prevImage = document.getElementById("prev-image")
+
+    const imageSet = document.querySelector(".image-set")
+
     openMenu.addEventListener("click", () => {
         menu.classList.add("opened")
         freeMenu.classList.add("opened_free")
@@ -87,5 +92,27 @@
 
     backToTop.addEventListener("click", () => {
       document.documentElement.scrollTop= "0"
+    })
+
+    let x = 1
+
+    nextImage.addEventListener("click", () => {
+        if (x > 3) {
+            x = 0
+        }
+        else {
+            x++;
+        }
+        imageSet.style.left = "-" +  x + "00%";
+    })
+
+    prevImage.addEventListener("click", () => {
+        if (x > 0) {
+            x--
+        }
+        else {
+            x = 4;
+        }
+        imageSet.style.left = "-" + x + "00%";
     })
 
