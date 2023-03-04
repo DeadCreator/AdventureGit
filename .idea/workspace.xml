@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ee7dc2f9-58ff-46a4-bb21-2b05da438745" name="Changes" comment="version 1_9">
+    <list default="true" id="ee7dc2f9-58ff-46a4-bb21-2b05da438745" name="Changes" comment="version 1_9_5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/single.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
@@ -24,6 +26,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/style.css" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,7 +58,7 @@
       <workItem from="1677694018577" duration="5406000" />
       <workItem from="1677700291924" duration="56000" />
       <workItem from="1677864824905" duration="9920000" />
-      <workItem from="1677927265859" duration="5326000" />
+      <workItem from="1677927265859" duration="5843000" />
     </task>
     <task id="LOCAL-00001" summary="version 1_8_7">
       <created>1677700088689</created>
@@ -90,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677874773936</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="version 1_9_5">
+      <created>1677935204655</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677935204655</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="version 1_8_7" />
     <MESSAGE value="version 1_9" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 1_9" />
+    <MESSAGE value="version 1_9_5" />
+    <option name="LAST_COMMIT_MESSAGE" value="version 1_9_5" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
     padding: 0;
@@ -1203,7 +1203,7 @@ footer {
 
 .single-properties .properties {
     margin-top: 0;
-    padding: 2vw 0;
+    padding-bottom: 2vw;
 }
 
 .single-properties .properties * {
@@ -1240,6 +1240,8 @@ footer {
 
 /* single page styles mobile */
 
+@media only screen and (min-width: 280px) and (max-width: 480px) {
 
+}
 
 

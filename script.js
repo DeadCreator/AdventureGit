@@ -91,7 +91,7 @@
     }
 
     backToTop.addEventListener("click", () => {
-      document.documentElement.scrollTop= "0"
+      document.documentElement.scrollTop= 0
     })
 
     let offset = 0
