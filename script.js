@@ -94,25 +94,21 @@
       document.documentElement.scrollTop= "0"
     })
 
-    let x = 1
+    let offset = 0
 
     nextImage.addEventListener("click", () => {
-        if (x > 3) {
-            x = 0
+        offset -= 100
+        if (offset < -300) {
+          offset = 0
         }
-        else {
-            x++;
-        }
-        imageSet.style.left = "-" +  x + "00%";
+        imageSet.style.left = offset + "%"
     })
 
     prevImage.addEventListener("click", () => {
-        if (x > 0) {
-            x--
+        offset +=100
+        if (offset > 0) {
+          offset = -400
         }
-        else {
-            x = 4;
-        }
-        imageSet.style.left = "-" + x + "00%";
+        imageSet.style.left = offset + "%"
     })
 
