@@ -360,7 +360,8 @@ input[type="submit"]:hover,
 
 .main-2-header a:hover,
 .main-4-header a:hover,
-.main-4-list a:hover {
+.main-4-list a:hover,
+.single-back:hover{
     color: #B8BECD;
 }
 
@@ -1123,16 +1124,18 @@ footer {
 
 .single-main {
     display: flex;
-    height: 30vw;
-    padding: 0 5vw;
+    padding: 2vw 5vw 15vw 5vw;
 }
 
 .single-images {
     flex: 5;
     position: relative;
     display: flex;
+    align-items: center;
     margin-top: 0;
     overflow: hidden;
+
+    border-radius: 1vw;
 }
 
 .single-images nav {
@@ -1144,8 +1147,25 @@ footer {
     justify-content: space-between;
 }
 
-.single-images nav button {
-    
+#prev-image,
+#next-image {
+    background: url("images/arrow-left.png") center no-repeat;
+    background-size: contain;
+    padding: 0;
+    width: 3vw;
+    height: 3vw;
+    border: none;
+    opacity: 50%;
+}
+
+#next-image {
+    background: url("images/arrow-right.png");
+    background-size: contain;
+}
+
+#prev-image:hover,
+#next-image:hover {
+    opacity: 100%;
 }
 
 .image-set {
@@ -1157,9 +1177,44 @@ footer {
     transition: all ease 1s;
 }
 
+.single-title {
+    padding: 0;
+}
 
-.single-description {
+.single-subtitle {
+    font-size: 1.5vw;
+    color: #1abc83;
+    font-family: "Mulish", sans-serif;
+    font-weight: bold;
+}
+
+.single-price {
+    color: orange;
+    padding-bottom: 1vw;
+}
+
+.single-properties {
     flex: 4;
+    margin: 0;
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.single-properties .properties {
+    margin-top: 0;
+    padding: 2vw 0;
+}
+
+.single-properties .properties * {
+    padding: 1vw 1vw 0 0;
+    font-size: 1.1vw;
+    color: #7D7987;
+}
+
+.single-properties button {
+    width: 40%;
+    margin-top: auto;
 }
 
 .single-images img {
@@ -1170,6 +1225,18 @@ footer {
 .slide {
     left: -100%;
 }
+
+.single-description {
+    font-size: 1.1vw;
+}
+
+.single-back {
+    color: orange;
+    text-decoration: none;
+    font-size: 1vw;
+    margin-top: 1vw;
+}
+
 
 /* single page styles mobile */
 
